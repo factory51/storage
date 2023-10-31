@@ -1,0 +1,11 @@
+{
+    "database": {
+        "host": "127.0.0.1",
+        "port": "3306",
+        "username": "goapi",
+        "password": "password",
+        "database": "rebels"
+    },
+
+    "app_secret_key": "13a90fab880a7e82209fb5c8b86ac125"
+}
