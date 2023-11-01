@@ -41,8 +41,9 @@ func storageRoutes(r *mux.Router) {
 	//r.Handle("/{mode}/account/{action}/", controllers.AccountDispatcher) //trailing slash catchall
 
 	r.HandleFunc("/get/{ident}", vmw(engine.Get)).Methods("GET")
+	r.HandleFunc("/get", vmw(engine.GetList)).Methods("GET")
 	r.HandleFunc("/create", vmw(engine.Create)).Methods("POST")
 	r.HandleFunc("/update", vmw(engine.Update)).Methods("PUT")
-	//r.HandleFunc("/create", account.Login).Methods("POST")
+	r.HandleFunc("/docs", engine.Documentation).Methods("GET")
 
 }

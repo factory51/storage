@@ -2,8 +2,8 @@
     "database": {
         "host": "127.0.0.1",
         "port": "3306",
-        "username": "storage_user",
-        "password": "LZmDfmaRqqtXIk#t",
+        "username": "USERNAME",
+        "password": "PASSWORD",
         "database": "storage"
     },
     "ident": "storage-01",

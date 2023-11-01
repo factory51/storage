@@ -1,5 +1,9 @@
 package engine
 
+type KeyItem struct {
+	Key string `json:"key" gorm:"primaryKey;column:key"`
+}
+
 type Bucket struct {
 	CreateAt    string `json:"created_at" gorm:"column:created_at"`
 	ClientIdent string `json:"client_ident" gorm:"column:client_ident"`
